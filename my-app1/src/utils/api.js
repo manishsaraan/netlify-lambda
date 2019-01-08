@@ -1,5 +1,5 @@
 const create = data => {
-  return fetch("http://localhost:9000/.netlify/functions/todos-create", {
+  return fetch("/.netlify/functions/todos-create", {
     body: JSON.stringify(data),
     method: "POST"
   }).then(response => {
