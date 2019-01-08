@@ -6,4 +6,4 @@
   publish = "build"
 
 [template.environment]
-  FAUNADB_SECRET = "Your FaunaDB Server Secret"
+  DB_URI = "mongodb://netlify1:Admin123@ds151614.mlab.com:51614/netlify-lambda"
