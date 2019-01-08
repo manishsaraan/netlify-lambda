@@ -27,10 +27,12 @@ exports.handler = (event, context, callback) => {
     msg
   );
 
+  console.log("--------process.env.FAUNADB_SECRET", process.env.DB_URI);
+
   msg
     .save()
     .then(doc => {
-      console.log(doc);
+      console.log("------------------------dsfdsfsdf", doc);
       return callback(null, {
         statusCode: 200,
         body: JSON.stringify(doc)
